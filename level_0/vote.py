@@ -9,9 +9,9 @@ data_2_post = {
     }
 print("please wait ..")
 for req in range(1024):
-    request = requests.post(url, data= data_2_post)
+    request = requests.post(url, data=data_2_post)
     if request.status_code == 200:
-        print("request number {} has been sent to {} with the id: {}".format(req, url, id))
+        print("request number {}".format(req, url, id))
     else:
         print("fail!")
         break
